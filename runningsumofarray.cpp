@@ -1,5 +1,4 @@
 #include<iostream>
-#include<climits>
 using namespace std;
 int main()
 {
@@ -10,13 +9,10 @@ int main()
     {
         cin>>arr[i];
     }
-    int max=INT_MIN;
+    int sum=0;
     for(int i=0; i<n; i++)
     {
-        if(arr[i]>max)
-        {
-            max=arr[i];
-        }
+        sum=sum+arr[i];
     }
-    cout<<max<<endl;
+    cout<<sum<<endl;
 }
